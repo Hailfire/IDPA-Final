@@ -22,10 +22,30 @@ public class Driver {
 	      }
 	
 
-	      Scanner sc2 = new Scanner(System.in); 
-	      String selection2 = sc.nextLine();
+	      Scanner sc3 = new Scanner(System.in); 
+	      String selection3 = sc.nextLine();
 	      
-	}  
-}
-
-
+	      if(selection3.equals("a"))
+	      {
+	    	  System.out.println("the orc is killed at the cost of 100 lifepoints");
+	      }
+	      
+	      
+	      
+	   
+	     Scanner sc2 = new Scanner(System.in); 
+	     String selection2 = sc.nextLine();   
+     	 
+	           
+	        if(selection2.equals("path 2") || selection.equals("2") )                
+	     
+	        {     
+	          System.out.println(" You see a sword in a tree and a statue with a sword to be inserted, tree or hole ");  
+	        }
+	        
+	  
+	}        
+	      
+	
+      
+	

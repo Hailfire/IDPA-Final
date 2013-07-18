@@ -5,6 +5,7 @@ public class Player {
 	int Health;
 	int Magic;
 	int lvl;
+	int money;
 	String name;
 
 	Player() {
@@ -13,9 +14,9 @@ public class Player {
 		Health = 150;
 		lvl = 8;
 		Magic = 30;
+		money = 1000;
 		name = "Siris";
-
-	}
+       }
 }
 	
 	

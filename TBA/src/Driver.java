@@ -67,9 +67,33 @@ public class Driver
 			{
 				System.out.println("The bog giant appears and you know nothing of its power do you either fight or scream like a little baby");
 
-				selection = sc.nextLine();
+				
+				{selection = sc.nextLine();
 				if (selection.equals("fight"))
 				{
+					int giantHealth = 100;
+					while(person.Health > 0 && giantHealth > 0)
+					{
+						System.out.println("1. attack ; 2. defend ");
+						int sel = sc.nextInt();
+						int giantAttack = rand.nextInt(21);
+						if(sel == 1)
+						{
+							int randAttack = rand.nextInt(person.attack);
+							giantHealth -= randAttack;
+							System.out.println("You attack the giant for " + randAttack + " damage");
+						}
+						else if (sel == 2)
+						{
+							giantAttack /= 2;
+							System.out.println("You defend");	
+						}
+						
+						person.Health -= giantAttack;
+						System.out.println("giant attacks you for " + giantAttack + " damage");
+						System.out.println("Your Health is now" + person.Health);
+					}
+					
 
 					System.out.println("the bog giant is killed with no damage taken but it now evolves into a moss golem(scary!!!!) " +
 							"do you a, confront it or b, piss your pants and run away");
@@ -81,7 +105,7 @@ public class Driver
 				selection = sc.nextLine();
 				if (selection.equals("confront"))
 				{
-					int golemHealth = 200;
+					int golemHealth = 250;
 					while(person.Health > 0 && golemHealth > 0)
 					{
 						System.out.println("1. attack ; 2. defend ");
@@ -113,3 +137,6 @@ public class Driver
 	}
 
 }
+}	
+	
+	
